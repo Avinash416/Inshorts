@@ -28,7 +28,7 @@ Connection(process.env.MONGODB_URI || URL);
 if(process.env.NODE_ENV==='production'){
     app.use(express.static('client/build'));
 }
-DefaultData();
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
+DefaultData();
 
