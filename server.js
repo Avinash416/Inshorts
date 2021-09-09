@@ -21,7 +21,7 @@ const password = process.env.DB_PASSWORD;
 const PORT = process.env.PORT ||8000;
 
 
-const URL = `mongodb+srv://:${password}@inshorts.jbnib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const URL = `mongodb+srv://${username}:${password}@inshorts.jbnib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 Connection(process.env.MONGODB_URI || URL);
 
